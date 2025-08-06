@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #003DA5;
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -30,7 +32,7 @@ nav ul li a {
 }
 
 nav ul li a.btn {
-    background-color: #f44336;
+    background-color: red;
     padding: 10px 15px;
     border-radius: 5px;
 }
@@ -61,7 +63,7 @@ form input {
 }
 
 form button {
-    background-color: #4CAF50;
+    background-color:red;
     color: white;
     padding: 10px;
     border: none;
@@ -72,5 +74,5 @@ form button {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #003DA5;
 }
