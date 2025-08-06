@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #003366; /* Dark Blue */
+    background-color: #003DA5; /* Dark Blue */
     color: white;
     padding: 20px;
     text-align: center;
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #003366; /* Dark Blue */
+    background-color: #003DA5; /* Dark Blue */
     color: white;
     text-align: center;
     padding: 10px;
@@ -72,3 +72,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
