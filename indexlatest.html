@@ -10,7 +10,7 @@
         /* Custom styles not available in Tailwind, such as scroll-padding-top for smooth scrolling to anchor links */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 5rem; /* Offset for fixed header */
+            scroll-padding-top: 6rem; /* Adjusted for fixed header height */
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -42,7 +42,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="mt-[6rem]">
+    <main class="mt-[6rem]"> <!-- Ensure this margin matches the header height -->
         <!-- Hero Section -->
         <section id="hero" class="bg-gradient-to-r from-blue-700 to-blue-900 text-white text-center py-24 md:py-32 rounded-b-3xl shadow-lg">
             <div class="container mx-auto px-4">
