@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katerina Travelling - Your Global Travel Partner</title>
-    <!-- Use Tailwind CSS for a modern and responsive design -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans text-gray-800 bg-white leading-relaxed">
@@ -13,17 +12,15 @@
     <header id="header" class="bg-[#003DA5] text-white p-4 lg:py-6 fixed top-0 left-0 w-full shadow-lg z-50">
         <div class="container mx-auto flex justify-between items-center flex-wrap">
             <div class="flex items-center space-x-4">
-                <!-- Logo with professional branding -->
-                <img src="katerina_logo.jpg" onerror="this.src='katerina_logo.jpg';" class="rounded-full shadow-md" alt="Katerina Travelling Logo">
-                <a href="#hero" class="text-3xl font-extrabold tracking-tight">Katerina Travelling</a>
+                <img src="katerina_logo.jpg" class="rounded-full shadow-md" alt="Katerina Travelling Logo">
+                <a href="#hero" class="text-3xl font-extrabold tracking-tight" aria-label="Go to Hero Section">Katerina Travelling</a>
             </div>
-            <!-- Navigation Menu -->
             <nav class="mt-4 lg:mt-0">
                 <ul class="flex space-x-4 lg:space-x-8 text-lg font-medium">
-                    <li><a href="#services" class="hover:underline transition duration-300">Services</a></li>
-                    <li><a href="#about" class="hover:underline transition duration-300">About Us</a></li>
-                    <li><a href="#contact" class="hover:underline transition duration-300">Contact</a></li>
-                    <li><a href="#register" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md">Register</a></li>
+                    <li><a href="#services" class="hover:underline transition duration-300" aria-label="Go to Services Section">Services</a></li>
+                    <li><a href="#about" class="hover:underline transition duration-300" aria-label="Go to About Us Section">About Us</a></li>
+                    <li><a href="#contact" class="hover:underline transition duration-300" aria-label="Go to Contact Section">Contact</a></li>
+                    <li><a href="#register" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md" aria-label="Register Now">Register</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +33,7 @@
             <div class="container mx-auto px-4">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4 animate-fade-in-down">Your Journey Starts Here</h1>
                 <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up">Trusted partner for seamless, unforgettable travel experiences worldwide.</p>
-                <a href="#services" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">Explore Our Services</a>
+                <a href="#services" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300" aria-label="Explore Our Services">Explore Our Services</a>
             </div>
         </section>
 
@@ -44,34 +41,28 @@
         <section id="services" class="container mx-auto py-16 px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-[#003DA5]">Our Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
+                <!-- Service Cards -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Flight Bookings</h3>
                     <p class="text-gray-600">Secure the best flights to your favorite destinations with our simple booking process.</p>
                 </div>
-                <!-- Service Card 2 -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Hotel Reservations</h3>
                     <p class="text-gray-600">Find and book the perfect hotel at unbeatable prices for your stay.</p>
                 </div>
-                <!-- Service Card 3 -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Custom Packages</h3>
                     <p class="text-gray-600">Tailored packages for honeymoons, group tours, and corporate retreats. We craft your perfect trip.</p>
                     <img src="https://placehold.co/400x300/e2e8f0/2d3748?text=Honeymoon+Package" class="w-full mt-4 rounded-lg shadow-inner" alt="Honeymoon Package">
-                    <!-- The provided image 'honeymoon_package.jpg' should be used here. -->
                 </div>
-                <!-- Service Card 4 -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Car Hire</h3>
                     <p class="text-gray-600">Self-drive or chauffeur-driven options available for ultimate flexibility.</p>
                 </div>
-                <!-- Service Card 5 -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Travel Insurance</h3>
                     <p class="text-gray-600">Stay protected and travel with peace of mind with our comprehensive insurance plans.</p>
                 </div>
-                <!-- Service Card 6 -->
                 <div class="service-card p-6 bg-gray-100 rounded-xl shadow-md cursor-pointer transition transform duration-300">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-700">Visa Assistance</h3>
                     <p class="text-gray-600">Expert help with visa applications, consultations, and travel documentation.</p>
@@ -83,21 +74,13 @@
                 <h3 class="text-3xl font-bold mb-8 text-[#003DA5]">Gallery of Our Tours</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+1" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 1">
-                    <!-- The provided image 'tour_picture2.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+2" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 2">
-                    <!-- The provided image 'tour_picture3.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+3" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 3">
-                    <!-- The provided image 'tour_picture4.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+4" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 4">
-                    <!-- The provided image 'tour_picture5.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+5" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 5">
-                    <!-- The provided image 'tour_picture6.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+6" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 6">
-                    <!-- The provided image 'tour_picture7.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+7" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 7">
-                    <!-- The provided image 'tour_picture8.jpg' should be used here. -->
                     <img src="https://placehold.co/600x400/003DA5/FFFFFF?text=Tour+8" class="rounded-xl shadow-lg w-full h-full object-cover" alt="Tour picture 8">
-                    <!-- The provided image 'tour_picture9.jpg' should be used here. -->
                 </div>
             </div>
         </section>
@@ -115,7 +98,7 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+                <!-- Contact Section -->
         <section id="contact" class="container mx-auto py-16 px-4">
             <h2 class="text-4xl font-bold text-center mb-8 text-[#003DA5]">Contact Us</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-12">
@@ -127,7 +110,6 @@
                         Our team is available to assist you with all your travel needs. We look forward to hearing from you!
                     </p>
                     <img src="https://placehold.co/400x250/e2e8f0/2d3748?text=Contact+Details" class="w-full mt-8 rounded-xl shadow-lg" alt="Contact details">
-                    <!-- The provided image 'contact_details.jpg' should be used here. -->
                 </div>
             </div>
         </section>
@@ -169,5 +151,4 @@
 </body>
 </html>
 
-
-
+        <section id="contact" class="
