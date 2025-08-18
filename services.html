@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katerina Travelling Services</title>
-    <link rel="stylesheet" href="services.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Katerina Travelling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="services.css">
 </head>
 <body>
-    <header>
-        <h1>Katerina Travelling Russian Agency</h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Custom Tours</h3>
-                <p>Experience Russia like never before with our personalized tour packages.</p>
-            </div>
-            <div class="service">
-                <h3>Group Tours</h3>
-                <p>Join our group tours for a fun and engaging travel experience.</p>
-            </div>
-            <div class="service">
-                <h3>Travel Consultation</h3>
-                <p>Get expert advice on your travel plans from our experienced consultants.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Katerina Travelling Russian Agency. All rights reserved.</p>
-    </footer>
-    <script src="services.js"></script>
+  <header class="bg-[#003DA5] text-white p-4">
+    <a href="Index.html">Home</a>
+  </header>
+  <main class="container mx-auto py-12">
+    <h1 class="text-3xl font-bold text-[#003DA5] mb-8 text-center">Our Services</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-gray-100 rounded shadow">Flight Bookings</div>
+      <div class="p-6 bg-gray-100 rounded shadow">Hotel Reservations</div>
+      <div class="p-6 bg-gray-100 rounded shadow">Custom Packages</div>
+    </div>
+  </main>
+  <footer class="bg-[#003DA5] text-white p-4 text-center">Services Footer</footer>
+  <script src="services.js"></script>
 </body>
 </html>
