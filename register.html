@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Katerina Travelling</title>
-    <link rel="stylesheet" href="register.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Katerina Travelling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Katerina Travelling</div>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="register.html" class="btn">Register</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="bg-[#003DA5] text-white p-4">
+    <a href="Index.html">Home</a>
+  </header>
 
-    <main>
-        <section id="register">
-            <h2>Register</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </section>
-    </main>
+  <main class="container mx-auto py-16">
+    <h1 class="text-3xl font-bold text-center text-[#003DA5] mb-8">Register</h1>
+    <form id="registerForm" class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow space-y-4">
+      <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded" required>
+      <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded" required>
+      <input type="password" id="password" placeholder="Password" class="w-full p-3 border rounded" required>
+      <button type="submit" class="bg-[#D52B1E] text-white px-6 py-2 rounded">Register</button>
+    </form>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Katerina Travelling. All rights reserved.</p>
-        <a href="home.html">Home</a>
-    </footer>
-    <script src="register.js"></script>
+  <footer class="bg-[#003DA5] text-white text-center p-4">© 2025 Katerina Travelling</footer>
+  <script src="register.js"></script>
 </body>
 </html>

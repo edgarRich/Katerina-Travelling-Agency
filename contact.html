@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Katerina Travelling</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Katerina Travelling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="contact.css">
 </head>
-<body>
-    <header>
-        <div class="logo">Katerina Travelling</div>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="register.html" class="btn">Register</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-white text-gray-800">
 
-    <main>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For inquiries, please reach out to us at <a href="mailto:info@katerinatravelling.com">info@katerinatravelling.com</a>.</p>
-        </section>
-    </main>
+  <header class="bg-[#003DA5] text-white p-4">
+    <a href="Index.html">Home</a>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Katerina Travelling. All rights reserved.</p>
-        <a href="home.html">Home</a>
-    </footer>
-    <script src="contact.js"></script>
+  <main class="container mx-auto py-16">
+    <h1 class="text-4xl font-bold text-center text-[#003DA5] mb-8">Contact Us</h1>
+    <form id="contactForm" class="max-w-lg mx-auto space-y-4 bg-gray-100 p-6 rounded shadow">
+      <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
+      <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+      <textarea id="message" placeholder="Your Message" class="w-full p-3 border rounded" required></textarea>
+      <button type="submit" class="bg-[#D52B1E] text-white px-6 py-2 rounded">Send</button>
+    </form>
+  </main>
+
+  <footer class="bg-[#003DA5] text-white py-4 text-center">© 2025 Katerina Travelling</footer>
+  <script src="contact.js"></script>
 </body>
 </html>
