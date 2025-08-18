@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 showMessage(`You clicked on "${serviceTitle}". We are here to help you!`);
             });
         });
+    });   
 
 
 // --- Registration Form Handling --- 
@@ -81,5 +82,4 @@ function showMessage(message, type = "success") {
             setTimeout(() => messageBox.remove(), 500); // Remove after transition
         }, 4000);
     }
- });
 });
