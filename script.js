@@ -81,4 +81,5 @@ function showMessage(message, type = "success") {
             setTimeout(() => messageBox.remove(), 500); // Remove after transition
         }, 4000);
     }
+ });
 });
