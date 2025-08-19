@@ -12,15 +12,33 @@
     <a href="Index.html">Home</a>
   </header>
 
-  <main class="container mx-auto py-16">
-    <h1 class="text-3xl font-bold text-center text-[#003DA5] mb-8">Register</h1>
-    <form id="registerForm" class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow space-y-4">
-      <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded" required>
-      <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded" required>
-      <input type="password" id="password" placeholder="Password" class="w-full p-3 border rounded" required>
-      <button type="submit" class="bg-[#D52B1E] text-white px-6 py-2 rounded">Register</button>
+  <main class="max-w-lg mx-auto py-16 px-6">
+  <div class="bg-white shadow-lg rounded-xl p-8">
+    <h1 class="text-3xl font-extrabold text-[#003DA5] mb-6 text-center">Create an Account</h1>
+    <form id="registerForm" class="space-y-6">
+      <div>
+        <label for="fullname" class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" id="fullname" required 
+          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" id="email" required 
+          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" required 
+          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
+      </div>
+      <button type="submit" 
+        class="w-full py-3 px-6 bg-[#D52B1E] text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition">
+        Sign Up
+      </button>
     </form>
-  </main>
+  </div>
+</main>
+
 
   <footer class="bg-[#003DA5] text-white text-center p-4">© 2025 Katerina Travelling</footer>
   <script src="register.js"></script>
