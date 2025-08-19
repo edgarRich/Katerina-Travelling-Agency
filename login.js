@@ -10,9 +10,9 @@ const toast = document.getElementById("toast")
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault()
-  showToast("Logging in...", "bg-blue-700")
+  showToast("Logging in...", "bg-blue-100 text-blue-700")
 
-  const email = document.getElementById("email").value
+  const email = documentById("email").value
   const password = document.getElementById("password").value
 
   const { data, error } = await supabase.auth.signInWithPassword({ email, password })
@@ -23,7 +23,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   // Get role
-  const { data: profile } = await supabase
+  const { data: profile } = await supabase 
     .from("agents")
     .select("role")
     .eq("id", data.user.id)

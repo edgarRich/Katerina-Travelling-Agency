@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Katerina Travelling</title>
+  <title>Login | Katerina Travelling</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="login.css">
+  <link href="login.css" rel="stylesheet">
 </head>
-<body>
-  <header class="bg-[#003DA5] text-white p-4">
-    <a href="Index.html">Home</a>
-  </header>
-
-  <main class="container mx-auto py-16">
-    <h1 class="text-3xl text-center text-[#003DA5] font-bold mb-6">Login</h1>
-    <form id="loginForm" class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow space-y-4">
-      <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded" required>
-      <input type="password" id="password" placeholder="Password" class="w-full p-3 border rounded" required>
-      <button type="submit" class="bg-[#D52B1E] text-white px-6 py-2 rounded">Login</button>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full">
+    <h1 class="text-3xl font-bold text-[#003DA5] mb-6 text-center">Login</h1>
+    <form id="loginForm" class="space-y-6">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" required class="input-field">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" required class="input-field">
+      </div>
+      <button type="submit" class="btn-primary w-full">Sign In</button>
     </form>
-  </main>
-
-  <footer class="bg-[#003DA5] text-white text-center p-4">© 2025 Katerina Travelling</footer>
-  <script src="login.js"></script>
+    <p class="mt-4 text-sm text-gray-600 text-center">
+      Don’t have an account? <a href="register.html" class="link">Register</a>
+    </p>
+    <div id="toast" class="hidden mt-4 text-center"></div>
+  </div>
+  <script type="module" src="login.js"></script>
 </body>
 </html>

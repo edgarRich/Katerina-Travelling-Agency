@@ -1,5 +1,5 @@
-input-field {
- @apply mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3;
+.input-field {
+  @apply mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3;
 }
 
 .btn-primary {
