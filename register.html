@@ -7,40 +7,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="register.css">
 </head>
-<body>
-  <header class="bg-[#003DA5] text-white p-4">
-    <a href="Index.html">Home</a>
-  </header>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
 
-  <main class="max-w-lg mx-auto py-16 px-6">
-  <div class="bg-white shadow-lg rounded-xl p-8">
-    <h1 class="text-3xl font-extrabold text-[#003DA5] mb-6 text-center">Create an Account</h1>
-    <form id="registerForm" class="space-y-6">
-      <div>
-        <label for="fullname" class="block text-sm font-medium text-gray-700">Full Name</label>
-        <input type="text" id="fullname" required 
-          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-        <input type="email" id="email" required 
-          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
-      </div>
-      <div>
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-        <input type="password" id="password" required 
-          class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3">
-      </div>
-      <button type="submit" 
-        class="w-full py-3 px-6 bg-[#D52B1E] text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition">
-        Sign Up
-      </button>
+  <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <h2 class="text-2xl font-bold text-[#003DA5] mb-6 text-center">Create Account</h2>
+    <form id="registerForm" class="space-y-4">
+      <input id="email" type="email" placeholder="Email" class="w-full p-3 border rounded" required>
+      <input id="password" type="password" placeholder="Password" class="w-full p-3 border rounded" required>
+      <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded">Register</button>
     </form>
+    <p class="mt-4 text-center text-sm">Already have an account? <a href="login.html" class="text-blue-600 hover:underline">Login</a></p>
   </div>
-</main>
 
-
-  <footer class="bg-[#003DA5] text-white text-center p-4">© 2025 Katerina Travelling</footer>
-  <script src="register.js"></script>
+  <script type="module" src="register.js"></script>
 </body>
 </html>

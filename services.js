@@ -1,1 +1,1 @@
-console.log("Services page loaded.");
+console.log("Services page loaded")

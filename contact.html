@@ -7,23 +7,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="contact.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50">
 
-  <header class="bg-[#003DA5] text-white p-4">
-    <a href="Index.html">Home</a>
-  </header>
+  <nav class="bg-[#003DA5] text-white px-6 py-4 flex justify-between">
+    <a href="Index.html" class="font-bold">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
 
-  <main class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center text-[#003DA5] mb-8">Contact Us</h1>
-    <form id="contactForm" class="max-w-lg mx-auto space-y-4 bg-gray-100 p-6 rounded shadow">
-      <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
-      <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
-      <textarea id="message" placeholder="Your Message" class="w-full p-3 border rounded" required></textarea>
-      <button type="submit" class="bg-[#D52B1E] text-white px-6 py-2 rounded">Send</button>
+  <section class="max-w-xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-[#003DA5] mb-4">Contact Us</h2>
+    <p class="mb-6">Reach us at <a href="mailto:info@katerinatravelling.com" class="text-blue-600">info@katerinatravelling.com</a></p>
+    <form id="contactForm" class="space-y-4 bg-white p-6 rounded-lg shadow">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+      <textarea placeholder="Your Message" class="w-full p-3 border rounded"></textarea>
+      <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded">Send</button>
     </form>
-  </main>
+  </section>
 
-  <footer class="bg-[#003DA5] text-white py-4 text-center">© 2025 Katerina Travelling</footer>
   <script src="contact.js"></script>
 </body>
 </html>

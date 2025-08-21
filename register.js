@@ -1,24 +1,16 @@
-import { supabase } from "./supabaseClient.js";
+import { createClient } from "https://esm.sh@supabase/supabase-js"
 
-document.getElementById("registerForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  const fullname = document.getElementById("fullname").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+const supabase = createClient("https://xduxoyahnrlbuygkrsli.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhkdXhveWFobnJsYnV5Z2tyc2xpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1NDQwNTUsImV4cCI6MjA3MTEyMDA1NX0.afSb99piQN8ulHAP_TElR1s4rg_k4shS8R1lTh6EVQI")
 
-  // Supabase signup
-  const { data, error } = await supabase.auth.signup ({
-    email,
-    password,
-    options: {
-      data: { full_name: fullname }
-    }
-  });
+document.getElementById("registerForm").addEventListener("submit", async (e) => {
+  e.preventDefault()
+  const email = document.getElementById("email").value 
+  const password = document.getElementById("password").value
 
-  if (error) {
-    alert ("❌ Registration failed: " + error.message);
-  } else {
-    alert("✅ Registration successful! Please check your email.");
-    window.location.href = "login.html"; 
-  }
-});
+  const { data, error } = await supabase.auth.signUp({ email, password })
+  if (error) return alert(error.message)
+
+  alert("Check your email for confirmation link!")
+  window.location.href = "login.html"  
+})  
