@@ -1,15 +1,1 @@
-.input-field {
-  @apply mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-[#003DA5] focus:border-[#003DA5] p-3;
-}
-
-.btn-primary {
-  @apply bg-[#D52B1E] text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition;
-}
-
-.link {
-  @apply text-[#003DA5] hover:underline;
-}
-
-#toast {
-  @apply text-sm font-medium p-2 rounded;
-}
+/*Login page tweaks*/

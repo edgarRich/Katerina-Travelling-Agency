@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="agent.css">
+</head>
+<body class="bg-gray-50">
+
+  <nav class="bg-[#003DA5] text-white px-6 py-4 flex justify-between items-center">
+    <span class="font-bold">Agent Dashboard</span>
+    <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded">Logout</button>
+  </nav>
+
+  <section class="max-w-3xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold mb-6">Add New Package</h2>
+    <form id="packageForm" class="space-y-4 bg-white p-6 shadow rounded">
+      <input id="title" type="text" placeholder="Package Title" class="w-full p-3 border rounded" required>
+      <textarea id="description" placeholder="Description" class="w-full p-3 border rounded" required></textarea>
+      <input id="price" type="number" placeholder="Price" class="w-full p-3 border rounded" required>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded">Save Package</button>
+    </form>
+
+    <h2 class="text-2xl font-bold mt-12 mb-6">My Packages</h2>
+    <ul id="packageList" class="bg-white shadow rounded divide-y"></ul>
+  </section>
+
+  <script type="module" src="agent.js"></script>
+</body>
+</html>
