@@ -46,6 +46,7 @@ async function loadPackages(agentId) {
     .from("packages")
     .select("*")
     .eq("agent_id", agentId)
+  hideLoader()  
   
   if (error) {
     list.innerHTML = `<li class='p-3 text-red-600'>${error.message}</li>`
