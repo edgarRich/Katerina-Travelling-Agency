@@ -23,6 +23,11 @@
       <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded">Save Package</button>
     </form>
 
+    <div id="loader" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
+    <div class="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+  </div>
+
+
     <h2 class="text-2xl font-bold mt-12 mb-6">My Packages</h2>
     <ul id="packageList" class="bg-white shadow rounded divide-y"></ul>
   </section>

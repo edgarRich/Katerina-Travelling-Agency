@@ -9,7 +9,11 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   const password = document.getElementById("password").value
 
   const { data, error } = await supabase.auth.signUp({ email, password })
-  if (error) return alert(error.message)
+  if (error) {
+    showToast(error.messsage, "error")
+  } else {
+    showToast("Login successful!", "success")
+  }
 
   alert("Check your email for confirmation link!")
   window.location.href = "login.html"  

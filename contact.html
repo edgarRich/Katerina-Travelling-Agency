@@ -26,5 +26,25 @@
   </section>
 
   <script src="contact.js"></script>
+  <div id="toast-container" class="ixed top-5 right-5 space-y-2 z-50"></div>
+  <script>
+    function showToast(message, type="info") {
+      const colors = {
+        success: "bg-green-500",
+        error: "bg-red-500",
+        info: "bg-blue-500",
+      }
+      const toast = document.createELement("div")
+      toast.className = `${colors[type]} text-white px-4 py-2 rounded shadow transition opacity-0`
+      toast.innerText = message 
+      document.getElementById("toast-container").appendChild(toast)
+
+      setTimeout(() => toast.classList.add("opacity-100"), 50)
+      setTimeout(() => {
+        toast.classList.remove("opacity-100")
+        setTimeout(() => toast.remove(), 500)
+      }, 3000)
+  }
+  </script>
 </body>
 </html>

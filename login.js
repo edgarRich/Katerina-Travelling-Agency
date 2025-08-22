@@ -9,7 +9,11 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value 
 
   const { data, error } = await supabase.auth.signInWithPassword({ email, password })
-  if (error) return alert(error.message)
+  if (error) {
+    showToast(error.message, "error")
+  } else {
+    showToast("Login successful!", "success")
+  }
 
   // Role-based redirect (stored in "profiles" table)
   const { data: profile } = await supabase 
