@@ -5,16 +5,19 @@ const supabase = createClient("https://xduxoyahnrlbuygkrsli.supabase.co",
 
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
   e.preventDefault()
+  showLoader()
+
   const email = document.getElementById("email").value 
   const password = document.getElementById("password").value
 
   const { data, error } = await supabase.auth.signUp({ email, password })
-  if (error) {
-    showToast(error.messsage, "error")
-  } else {
-    showToast("Login successful!", "success")
-  }
 
-  alert("Check your email for confirmation link!")
+  hideLoader()
+
+  if (error) {
+    return showToast(error.messsage, "error")
+  } 
+   
+  showToast("Registration successful! Please login.", "success")
   window.location.href = "login.html"  
 })  
